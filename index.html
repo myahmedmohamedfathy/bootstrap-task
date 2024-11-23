@@ -8,7 +8,7 @@
     <title>Ahmed Fathy</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-black fixed-top position-relative">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top position-relative">
       <div class="container">
         <h3 class="text-light">Ahmed Fathy</h3>
         <div class="collapse navbar-collapse">
@@ -35,6 +35,15 @@
             <li class="nav-item">
               <a class="nav-link p-2 p-lg-3">contact</a>
             </li>
+            <li>
+              <div class="btn-group d-flex align-items-center h-100" role="group" aria-label="Theme Toggle">
+                <input type="radio" class="btn-check" name="theme" id="light-mode" value="light" autocomplete="off" onclick="switchTheme('light')" checked>
+                <label class="btn btn-outline-light" for="light-mode">Light</label>
+          
+                <input type="radio" class="btn-check" name="theme" id="dark-mode" value="dark" autocomplete="off" onclick="switchTheme('dark')">
+                <label class="btn btn-outline-dark" for="dark-mode">Dark</label>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -49,7 +58,7 @@
     </header>
     <div class="portfolio mb-5">
       <div class="heading text-center mt-5 p-5 position-relative">
-        <h2 class="text-uppercase fs-1 fw-bolder">portfolio</h2>
+        <h2 class="text-uppercase fs-1 fw-bolder text-black-50">portfolio</h2>
         <p class="text-black-50">Some of my projects in photography field</p>
       </div>
       <div class="container">
@@ -157,5 +166,6 @@
         >
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
